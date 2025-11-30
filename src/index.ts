@@ -1,24 +1,24 @@
-import { serve } from "@hono/node-server";
-import { Hono } from "hono";
+import { serve } from '@hono/node-server'
+import { Hono } from 'hono'
 
-const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 
-const app = new Hono();
+const app = new Hono()
 
-await delay(5000);
+await delay(5000)
 
-app.get("/", (c) => {
-	return c.text("Hello Hono!");
-});
+app.get('/', (c) => {
+  return c.text('Hola putillos, eliminaron al america')
+})
 
-app.get("/health", (c) => {
-	return c.json("ok", 200);
-});
+app.get('/health', (c) => {
+  return c.json('ok', 200)
+})
 
-const port = 3000;
-console.log(`Server is running on http://localhost:${port}`);
+const port = 3000
+console.log(`Server is running on http://localhost:${port}`)
 
 serve({
-	fetch: app.fetch,
-	port,
-});
+  fetch: app.fetch,
+  port,
+})
