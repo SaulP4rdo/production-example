@@ -8,7 +8,7 @@ const app = new Hono()
 await delay(5000)
 
 app.get('/', (c) => {
-  return c.text('Hola putillos, eliminaron al america y agregue los secrets')
+  return c.text('A ver si cierto que muy vergas')
 })
 
 app.get('/health', (c) => {
