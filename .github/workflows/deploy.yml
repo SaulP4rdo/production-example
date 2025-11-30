@@ -25,5 +25,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            SaulP4rdo/production-example
+            SaulP4rdo/production-example:latest
           platforms: linux/amd64
