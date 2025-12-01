@@ -8,7 +8,7 @@ const app = new Hono()
 await delay(5000)
 
 app.get('/', (c) => {
-  return c.text('Hace el pull automatico?')
+  return c.text('no ps parece que no')
 })
 
 app.get('/health', (c) => {
