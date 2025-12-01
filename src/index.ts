@@ -8,7 +8,7 @@ const app = new Hono()
 await delay(5000)
 
 app.get('/', (c) => {
-  return c.text('A ver si cierto que muy vergas')
+  return c.text('Y si lo modifico sigues muy verga o que?')
 })
 
 app.get('/health', (c) => {
